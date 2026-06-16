@@ -27,6 +27,7 @@ import {
   Handshake,
   Hammer,
   Wrench,
+  Lightbulb,
 } from "lucide-react";
 import { BarChart3 } from "lucide-react";
 
@@ -93,6 +94,7 @@ export const menuItems = [
   { id: "intro", label: "مقدمة المشروع", icon: Home },
   { id: "build", label: "تفاصيل البناء", icon: Hammer },
   { id: "tools", label: "أدوات التطوير", icon: Wrench },
+  { id: "solutions", label: "الحلول التقنية", icon: Lightbulb },
   { id: "team", label: "فريق العمل", icon: Users },
   { id: "roadmap", label: "رحلة المستخدم", icon: Route },
   { id: "features", label: "مميزات التطبيق", icon: Star },

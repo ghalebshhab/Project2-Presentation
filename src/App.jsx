@@ -15,6 +15,7 @@ import TechPage from "./pages/TechPage";
 import EmailPage from "./pages/EmailPage";
 import ProjectMetrices from "./pages/ProjectMatrices";
 import ToolsPage from "./pages/ToolsPage";
+import SolutionsPage from "./pages/SolutionsPage";
 
 function App() {
   const [activePage, setActivePage] = useState("intro");
@@ -43,6 +44,9 @@ function App() {
 
       case "tools":
         return <ToolsPage pageAnimation={pageAnimation} />;
+
+      case "solutions":
+        return <SolutionsPage pageAnimation={pageAnimation} />;
 
       case "roadmap":
         return <RoadmapPage pageAnimation={pageAnimation} />;
