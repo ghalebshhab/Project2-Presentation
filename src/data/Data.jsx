@@ -89,14 +89,15 @@ export const teamMembers = [
 ];
 
 export const menuItems = [
-  { id: "team", label: "Team", icon: Users },
-  { id: "intro", label: "Project Intro", icon: Home },
-  { id: "roadmap", label: "User Flow", icon: Route },
-  { id: "features", label: "Features", icon: Star },
-  { id: "screens", label: "Screens", icon: Image },
-  { id: "tech", label: "Technology", icon: Code2 },
-  { id: "email", label: "Email Service", icon: Mail },
-  {id: "metrics", label: "Project Metrics", icon: BarChart3 },
+  { id: "intro", label: "مقدمة المشروع", icon: Home },
+  { id: "build", label: "تفاصيل البناء", icon: Hammer },
+  { id: "team", label: "فريق العمل", icon: Users },
+  { id: "qr", label: "مسح الحضور", icon: QrCode },
+  { id: "roadmap", label: "رحلة المستخدم", icon: Route },
+  { id: "features", label: "مميزات التطبيق", icon: Star },
+  { id: "screens", label: "شاشات التطبيق", icon: Image },
+  { id: "email", label: "خدمة البريد", icon: Mail },
+  { id: "metrics", label: "إحصائيات المشروع", icon: BarChart3 },
 ];
 export const features = [
   {

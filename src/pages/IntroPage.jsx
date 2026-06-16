@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Smartphone, Map, Users, Bell, Tag, BrainCircuit, Search, Code, Server, Database, Sparkles, Briefcase, Flame, Calendar, TrendingUp, Bot } from "lucide-react";
+import { Smartphone, Map, Users, Bell, Tag, BrainCircuit, Search, Code, Server, Database, Sparkles, Briefcase, Flame, Calendar, TrendingUp, Bot, Monitor, Layout, PenTool, Code2, Kanban } from "lucide-react";
 
 function IntroPage({ pageAnimation }) {
   return (
@@ -83,7 +83,7 @@ function IntroPage({ pageAnimation }) {
         </div>
 
 
-        <h2 className="section-title">كيف يدعم JoMap أصحاب الأعمال؟</h2>
+        <h2 className="section-title">كيف يدعم JoMap أصحاب الأعمال (Owner)؟</h2>
         <div className="feature-cards-grid business-cards-grid">
           <div className="info-card business-card">
             <Briefcase className="info-icon business-icon" />
@@ -111,7 +111,29 @@ function IntroPage({ pageAnimation }) {
             <p>تقديم توصيات للمستخدمين لزيارة أعمالك بناءً على سلوكياتهم، وتوفير رؤى مستقبلية تعتمد على البيانات لقياس نجاح حملاتك.</p>
           </div>
         </div>
+        <div className="dual-users-intro" style={{ marginTop: "60px", marginBottom: "30px", textAlign: "right" }}>
+          <h2 className="section-title text-center" style={{ textAlign: "right" }}>نظرة على بناء التطبيق (Build Details & Phases)</h2>
+          <p className="dual-users-text" style={{ textAlign: "right" }}>
+            لم يكن بناء <strong>JoMap</strong> مجرد عملية برمجية، بل رحلة هندسية متكاملة شملت التخطيط، تصميم واجهة المستخدم (UI/UX)، تطوير الخوادم وقواعد البيانات، بناء تطبيقات الموبايل، والاختبار الشامل.
+            <br/><br/>
+            لمعرفة التفاصيل الدقيقة حول المراحل التي مر بها المشروع وكيفية حل المشكلات التقنية المعقدة، قمنا بتخصيص صفحة كاملة لذلك في قسم <strong>"تفاصيل البناء"</strong>.
+          </p>
+        </div>
 
+        <div className="dual-users-intro" style={{ marginBottom: "0", textAlign: "right" }}>
+          <h2 className="section-title text-center" style={{ textAlign: "right" }}>الأدوات والتقنيات المستخدمة (Tools & Tech Stack)</h2>
+          <p className="dual-users-text" style={{ textAlign: "right", marginBottom: "25px" }}>
+            اعتمدنا في تطوير <strong>JoMap</strong> على أحدث وأفضل التقنيات لضمان الأداء السريع، الأمان العالي، وتجربة المستخدم السلسة:
+          </p>
+          <div className="tools-row" style={{ justifyContent: "center", marginTop: "20px" }}>
+            <div className="tool-chip"><Monitor className="tool-icon" /> Android Studio & IntelliJ</div>
+            <div className="tool-chip"><Layout className="tool-icon" /> VS Code</div>
+            <div className="tool-chip"><PenTool className="tool-icon" /> Figma (UI/UX)</div>
+            <div className="tool-chip"><Code2 className="tool-icon" /> GitHub & Git</div>
+            <div className="tool-chip"><Kanban className="tool-icon" /> Jira / Trello</div>
+            <div className="tool-chip"><Database className="tool-icon" /> Postman & DBeaver</div>
+          </div>
+        </div>
 
       </div>
     </motion.section>

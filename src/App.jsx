@@ -58,7 +58,7 @@ function App() {
           return <ProjectMetrices pageAnimation={pageAnimation} />;
 
       default:
-        return <TeamPage pageAnimation={pageAnimation} />;
+        return <IntroPage pageAnimation={pageAnimation} />;
     }
   };
 

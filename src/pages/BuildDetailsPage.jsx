@@ -82,19 +82,6 @@ function BuildDetailsPage({ pageAnimation }) {
           </div>
         </div>
 
-        {/* Tools Section */}
-        <div className="tools-section">
-          <h3 className="section-title-small">أدوات التطوير (Tools Used)</h3>
-          <div className="tools-row">
-            <div className="tool-chip"><Monitor className="tool-icon" /> Android Studio & IntelliJ</div>
-            <div className="tool-chip"><Layout className="tool-icon" /> VS Code</div>
-            <div className="tool-chip"><PenTool className="tool-icon" /> Figma (UI/UX)</div>
-            <div className="tool-chip"><Code2 className="tool-icon" /> GitHub & Git</div>
-            <div className="tool-chip"><Kanban className="tool-icon" /> Jira / Trello</div>
-            <div className="tool-chip"><Database className="tool-icon" /> Postman & DBeaver</div>
-          </div>
-        </div>
-
         {/* Technical Solutions Section */}
         <div className="solutions-section">
           <h3 className="section-title-small">المشاكل المعقدة والحلول التقنية (Technical Solutions)</h3>
