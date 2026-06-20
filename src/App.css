@@ -1,22 +1,22 @@
 :root {
   /* Android Semantic Colors (Base Hex) */
-  --color-primary: #1E88E5;
+  --color-primary: #38bdf8;
   --color-secondary: #26C6DA;
-  --color-background: #2C2C2C;
-  --color-surface: #2C2C2C;
-  --color-surface-variant: #383838;
+  --color-background: #090e19;
+  --color-surface: #0f172a;
+  --color-surface-variant: #1e293b;
   --color-on-primary: #ffffff;
   --color-on-secondary: #000000;
-  --color-on-background: #ffffff;
-  --color-on-surface: #ffffff;
-  --color-on-surface-variant: #E0E0E0;
+  --color-on-background: #f8fafc;
+  --color-on-surface: #f1f5f9;
+  --color-on-surface-variant: #94a3b8;
 
   /* RGB representations for rgba() transparency use */
-  --color-primary-rgb: 30, 136, 229;
+  --color-primary-rgb: 56, 189, 248;
   --color-secondary-rgb: 38, 198, 218;
-  --color-background-rgb: 44, 44, 44;
-  --color-surface-rgb: 44, 44, 44;
-  --color-surface-variant-rgb: 56, 56, 56;
+  --color-background-rgb: 9, 14, 25;
+  --color-surface-rgb: 15, 23, 42;
+  --color-surface-variant-rgb: 30, 41, 59;
 
   /* Legacy Mapping for Seamless Integration */
   --bg-main: var(--color-background);
@@ -393,7 +393,6 @@ button {
   animation: fadeUpMetrics 0.86s ease both;
 }
 
-.feature-card,
 .tech-box,
 .email-form,
 .phone-preview,
@@ -407,13 +406,12 @@ button {
 .repo-access-panel,
 .metrics-bottom-panel,
 .supervisor-section {
-  background: linear-gradient(180deg, rgba(18, 27, 47, 0.96), rgba(9, 14, 25, 0.98));
+  background: var(--bg-card);
   border: 1px solid var(--line);
   box-shadow: var(--shadow-card);
   transition: var(--transition);
 }
 
-.feature-card:hover,
 .tech-box:hover,
 .phone-preview:hover,
 .animated-qr-card:hover,
@@ -1067,7 +1065,7 @@ button {
   align-items: flex-start;
   gap: 20px;
   padding: 26px;
-  background: linear-gradient(145deg, rgba(18, 27, 47, 0.9), rgba(10, 18, 35, 0.95));
+  background: var(--bg-card);
   border: 1px solid var(--line);
   border-radius: 24px;
   transition: var(--transition);
@@ -1132,25 +1130,36 @@ button {
 }
 
 .feature-card {
-  padding: 28px;
-  border-radius: 26px;
+  background: var(--bg-card);
+  padding: 24px;
+  border-radius: 16px;
   animation: popMetrics 0.65s ease both;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+  text-align: right;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+  border: 1px solid var(--line);
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card);
+  background: var(--bg-card-strong);
+  border-color: var(--line-strong);
 }
 
 .feature-icon {
-  width: 56px;
-  height: 56px;
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
   display: grid;
   place-items: center;
-  border-radius: 18px;
-  color: white;
-  background: linear-gradient(135deg, var(--blue), var(--cyan));
-  margin-bottom: 18px;
-}
-
-.feature-card h3 {
-  font-size: 22px;
-  margin-bottom: 10px;
+  border-radius: 14px;
+  color: var(--cyan);
+  background: rgba(var(--color-secondary-rgb), 0.1);
+  margin-bottom: 0;
 }
 
 /* Screens */
@@ -1680,7 +1689,7 @@ button {
   overflow: hidden;
   border-radius: 26px;
   padding: 26px;
-  background: linear-gradient(180deg, rgba(18, 27, 47, 0.96), rgba(9, 14, 25, 0.98));
+  background: var(--bg-card);
   border: 1px solid var(--line);
   box-shadow: var(--shadow-card);
   transition: var(--transition);

@@ -23,12 +23,13 @@ function FeaturesPage({ pageAnimation }) {
               transition={{ delay: index * 0.1 }}
               whileHover={{ y: -12 }}
             >
-              <div className="feature-icon">
-                <Icon size={30} />
+              <div className="feature-text">
+                <h3>{t(`${feature.key}.title`)}</h3>
+                <p>{t(`${feature.key}.text`)}</p>
               </div>
-
-              <h3>{t(`${feature.key}.title`)}</h3>
-              <p>{t(`${feature.key}.text`)}</p>
+              <div className="feature-icon">
+                <Icon size={24} />
+              </div>
             </motion.div>
           );
         })}
